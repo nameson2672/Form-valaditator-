@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: rgb(0, 0, 0);
+	width: 100%;
+	min-height: 100vh;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Roboto;
+}
+
+.container {
+	display: block;
+
+	width: 400px;
+	position: relative;
+	box-shadow: 0 0 10px #b6b5b5;
+	padding: 40px;
+	text-align: center;
+}
+
+.form-control {
+	display: flex;
+	flex-direction: column;
+	text-align: start;
+	width: 100%;
+	margin: 10px 0;
+    padding-bottom: 15px;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+.form-control label {
+	font-size: 16px;
+	color: #7e7f80;
+	padding-bottom: 5px;
+}
+.form-control input {
+	font-size: 16px;
+	padding: 10px 0;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid rgb(172, 172, 172);
+	border-radius: 5px;
+}
+
+.form-control input:focus {
+	border: 1px solid #4b75eb;
+	outline: none;
+}
+
+small {
+	font-size: 14px;
+    padding-top: 2px;
+	color: rgb(255, 0, 0);
+	display: none;
+}
+
+input[type="submit"] {
+	padding: 10px 43%;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+	background-color: rgb(61, 158, 238);
+	transition: all 0.5s ease;
+}
+
+input[type="submit"]:hover {
+	background-color: rgb(21, 100, 165);
+}
+
+.form-control.error small{
+    color: rgb(255, 0, 0);
+    display: block;
+}
+.form-control.error input{
+    border: 1px solid red;
+}
